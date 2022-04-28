@@ -13,19 +13,26 @@ href="style/style.css">
  <div id="menu">
  </div>
  <div id="content">
-<tr>
- <td><input type="text" name="tx1" value="" maxlength="10" placeholder="Логін"></td></tr>
+ <form method="get" action="">
+  <p>
+ <br>
+ <table border="1">
+<tr><td>
+<input type="text" name="tx1" value="" maxlength="10" placeholder="Логін">
+</td></tr>
+ <br>
+<tr><td>
+<input type="password" name="ps1" value="password1">
+</td></tr>
 <br> 
-<tr>
-<td><input type="password" name="ps1" value="password1"></td></tr>
-<br> 
-<tr>
-<td>
-Зберегти логін і пароль для наступного входу?
+<tr><td>
+ Зберегти логін і пароль для наступного входу?
 <input type="radio" name="rd1" value="значення1"> Так
 <input type="radio" name="rd1" value="значення2"> Ні
- </td></tr>
-<select name="sl1">
+</td></tr>
+<br> 
+<tr><td>
+ <select name="sl1">
  <option value="v1"
 selected="selected">Українська мова </option>
 <option value="v2">Англійська мова</option>
@@ -33,7 +40,8 @@ selected="selected">Українська мова </option>
 <option value="v4">Японська мова</option>
 <option value="v5">Ірландська мова</option>
 </select>
-
+</td></tr>
+<br>
 <tr>
 <td><input type="reset" name="rs1" value="очистити"></td></tr>
 <br>
@@ -46,5 +54,3 @@ selected="selected">Українська мова </option>
 </div>
 </body>
 </html>
-
-
