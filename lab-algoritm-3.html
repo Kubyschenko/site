@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Гіпертекстовий документ</title>
+<meta charset="utf-8">
+<link rel="stylesheet" 
+href="lab13.css">
+  <script>
+  function f5()
+    {var a, b, c,d, result;
+    a=28;
+    b=7;
+    c=30;
+    d=72;
+   
+                             max=d;
+        if(max<a)            max=a;
+        if(max<b)            max=b;
+        if(max<c)            max=c;
+    document.getElementById('zd5').innerHTML="max(a,b,c,d)="+max;}
+</script>
+</head>
+<body bgcolor="#ffdfc4">
+    <div id="content" class="vidstup"><img src="p2.png" alt="Схема роботи оператора if" style="width:50%;">
+   <img src="p3.png" alt="Схема роботи оператора if" style="width:50%;">
+ 
+     <h1>Задача 5 Тема:розгалуження</h1>
+    <p>Знайти максимум серед 4 відомих чисел</p>
+      <h1 id="zd5"></h1>
+   <form>
+         <input type="button" value="Розв'язок задача 5" onclick="f5()">
+    </form>
+      </div>
+ <div id="header">
+ </div>
+ <div id="menu">
+ </div>
+ <div id="footer">
+ </div>
+</div>
+</body>
+</html>
