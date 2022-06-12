@@ -18,12 +18,29 @@ href="lab13.css">
         if(max<b)            max=b;
         if(max<c)            max=c;
     document.getElementById('zd5').innerHTML="max(a,b,c,d)="+max;}
+    
+    function f3()
+    {var a, b, c,result;
+    a=100000000;
+    b=20;
+    c=15;
+    result="трикутник існує";
+    if(a>=c+b)  result="трикутник не існує";
+    if(b>=c+a)  result="трикутник не існує"; 
+    if(c>=b+a)  result="трикутник не існує";
+    document.getElementById('zd3').innerHTML="result="+result;}
 </script>
 </head>
 <body bgcolor="#ffdfc4">
     <div id="content" class="vidstup"><img src="p2.png" alt="Схема роботи оператора if" style="width:50%;">
    <img src="p3.png" alt="Схема роботи оператора if" style="width:50%;">
- 
+  <h1>Задача 3 Тема:розгалуження</h1>
+    <p>З'ясувати, чи існує трикутник з даними сторонами. Використати нерівність трикутника: довжина сторони трикутника менша від суми довжин двох інших сторін цього трикутника.
+    </p>
+      <h1 id="zd3"></h1>
+   <form>
+         <input type="button" value="Розв'язок задача 3" onclick="f3()">
+    </form>
      <h1>Задача 5 Тема:розгалуження</h1>
     <p>Знайти максимум серед 4 відомих чисел</p>
       <h1 id="zd5"></h1>
